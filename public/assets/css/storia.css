@@ -1,0 +1,144 @@
+/*--------------------------------------------------------------
+# Pagina Storia
+--------------------------------------------------------------*/
+body{
+    background-color: rgba(224, 224, 224, 0.727);
+}
+.box-img-storia{
+    transition-property: height, width;
+    transition-duration: .5s;
+    height: 50vh;
+    width: 100%;
+    background-image: url("https://storage.cloud.google.com/contenuto-moonspace/immagini/storia/1.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*     Herosection      */
+  }
+  .img-storia-1{
+    height: 100%;
+    width: 100%;
+  }
+  .title-storia{
+    margin-top: 4.5rem;
+    font-size: 45pt;
+    color: whitesmoke;
+    font-weight: 600;
+    text-shadow: 1px 2px 6px rgba(0,0,0,0.2);
+  }
+  .box-text-1{
+    margin-bottom: 3rem;
+    width: 100%;
+    display: flex;
+  }
+  .box-text-1-left{
+    width: 50%;
+  }
+  .box-text-1-right{
+    width: 50%;
+  }
+  .storia1-titolo{
+    color: #829c7b;
+    font-size: 22pt;
+    font-weight: 800;
+    font-family: Raleway;
+    margin-left: 5rem;
+    margin-top: 6rem;
+  }
+  .storia1-testo{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: 13pt;
+    text-align: justify;
+  }
+  /*    End Herosection      */
+  .card-box{
+    margin: auto;
+    height: 80vh;
+    width: 90%;
+    display: flex;
+  }
+  .card-box-left{
+    height: 80vh;
+    width: 50%;
+    background-image: url("https://storage.cloud.google.com/contenuto-moonspace/immagini/storia/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .card-box-right{
+    height: 80vh;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .storia1-titolo{
+    margin-right: 1rem;
+  }
+
+  .footer--center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: 1000px){
+    .box-img-storia{
+      height: 35vh;
+    }
+
+    .box-text-1{
+      flex-direction: column;
+    }
+    .box-text-1-left{
+      width: 100%;
+    }
+    .box-text-1-right{
+      width: 100%;
+    }
+    .storia1-titolo{
+      margin-left: 0;
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .storia1-titolo{
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+  }
+
+
+  
+  @media only screen and (max-width: 880px){
+    .box-img-storia{
+      background-position: center;
+    }
+    .card-box{
+      flex-direction: column;
+    }
+    .card-box-left{
+      width: 100%;
+    }
+    .card-box-right{
+      width: 100%;
+    }
+    .card__titolo--primo{
+      margin: 0 0 1rem 0;
+    }
+  }
+  
+  @media only screen and (max-width: 600px){
+    .storia1-testo{
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 500px){
+    .card__titolo--primo{
+      margin: 0 .7rem 1rem .7rem;
+      font-size: 1.5rem !important;
+    }
+  }

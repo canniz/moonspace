@@ -1,0 +1,96 @@
+
+.spazi__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.25rem;
+}
+.spazi__button{
+    background-color: #44523f;
+    border: none;
+    padding: 1rem 2rem 1rem 2rem;
+    color: white;
+}
+
+.carosel, .slide, .carousel-inner, .carousel-item{
+    height: 100%;
+}
+
+@media only screen and (min-width: 1480px){
+    .carosel, .slide, .carousel-inner, .carousel-item{
+        height: 100vh;
+    }
+
+}
+
+
+/* card */
+
+.cards__left, .cards__right{
+    height: 100%;
+    background-color: whitesmoke;
+    margin: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+}
+
+.mg-prima{
+    margin-top: 6.5rem !important;
+}
+
+.card__left--container, .card__right--container{
+    transition-property: width;
+    transition-duration: .5s;
+    padding: 1.5rem;
+    width: 70%;
+}
+.card__left--img, .card__right--img{
+    transition-property: width;
+    transition-duration: .5s;
+    width: 30%;
+}
+.card__left--img img, .card__right--img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 1480px){
+    .card__left--container, .card__right--container{
+        width: 80%;
+    }
+    .card__left--img, .card__right--img{
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .card__left--container, .card__right--container{
+        width: 60%;
+    }
+    .card__left--img, .card__right--img{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .cards__left, .cards__right{
+        height: 100%;
+        background-color: whitesmoke;
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    .card__left--container, .card__right--container{
+        width: 100%;
+    }
+    .card__left--img, .card__right--img{
+        width: 100%;
+    }
+    .cards__right{
+        flex-direction: column-reverse
+    }
+}
+
